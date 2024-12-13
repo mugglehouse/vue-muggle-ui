@@ -7,7 +7,7 @@ import TestUI from '@muggle-ui/components'
 
 import '@muggle-ui/theme-chalk/index.less'
 import 'highlight.js/styles/base16/summerfruit-light.css'
-import hljsVuePlugin from '@highlightjs/vue-plugin'
+import VueHighlightJS from '@highlightjs/vue-plugin'
 import Preview from './preview/index.vue'
 
 // 引入样式文件
@@ -22,6 +22,6 @@ export default {
   enhanceApp({ app, router, siteData }) {
     app.use(TestUI)
     app.component('preview', Preview)
-    app.use(hljsVuePlugin)
+    app.use(VueHighlightJS)
   },
 } satisfies Theme
