@@ -1,0 +1,14 @@
+{
+  "name": "@muggle-ui/examples",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "main": "main.ts",
+  "scripts": {
+    "dev": "vite --port 8888",
+    "test": "esno test.ts"
+  }
+}

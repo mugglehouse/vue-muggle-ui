@@ -1,5 +1,5 @@
 {
-  "name": "@muggle-ui/components",
+  "name": "@muggle-ui/theme-chalk",
   "version": "1.0.0",
   "description": "",
   "author": "",
@@ -7,7 +7,6 @@
   "keywords": [],
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "index": "esno index.ts"
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }

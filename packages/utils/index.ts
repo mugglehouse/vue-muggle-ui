@@ -1,3 +1,1 @@
-import { add } from '@muggle-ui/components'
-const res = add(1, 2)
-console.log(res)
+export const add = (a: number, b: number): number => a + b;
