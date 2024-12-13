@@ -7,7 +7,7 @@ import TestUI from '@muggle-ui/components'
 
 import '@muggle-ui/theme-chalk/index.less'
 import 'highlight.js/styles/base16/summerfruit-light.css'
-import VueHighlightJS from '@highlightjs/vue-plugin'
+import { component as VueHighlightJS } from '@highlightjs/vue-plugin'
 import Preview from './preview/index.vue'
 
 // 引入样式文件
