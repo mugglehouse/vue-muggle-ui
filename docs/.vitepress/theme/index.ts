@@ -3,7 +3,7 @@ import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import './style.css'
-import TestUI from '@muggle-ui/components'
+import MuggleUI from '@muggle-ui/components'
 
 import '@muggle-ui/theme-chalk/index.less'
 import 'highlight.js/styles/base16/summerfruit-light.css'
@@ -20,7 +20,7 @@ export default {
     })
   },
   enhanceApp({ app, router, siteData }) {
-    app.use(TestUI)
+    app.use(MuggleUI)
     app.component('preview', Preview)
     app.use(hljsVuePlugin)
   },

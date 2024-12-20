@@ -1,0 +1,204 @@
+.m-button {
+  display: inline-block;
+  white-space: nowrap;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #fff;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  font-weight: 500;
+  line-height: 1;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  min-width: 98px;
+  padding: 12px 18px;
+  font-size: 14px;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+  &:hover:not(:disabled) {
+    box-shadow: 0 7px 14px rgb(50 50 93 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+  }
+}
+
+.m-button.m-button--small {
+  min-width: 92px;
+  padding: 10px 18px;
+}
+.m-button.m-button--mini {
+  min-width: 80px;
+  padding: 9px 15px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+.m-button.m-button--icon {
+  min-width: 40px;
+  padding: 8px 15px;
+  font-size: 18px;
+  border-radius: 4px;
+}
+.m-button.is-round {
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.m-button.is-disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.m-button__default {
+  color: var(--m-primary);
+  background-color: transparent;
+  &:active:not(:disabled) {
+    background: #e6e6e6;
+    border-color: #e6e6e6;
+    color: var(--m-default);
+    box-shadow: 0 0 0 transparent;
+  }
+}
+
+.m-button__primary {
+  color: #fff;
+  background-color: var(--m-primary);
+  border-color: var(--m-primary);
+  &:active:not(:disabled) {
+    background: #324cdd;
+  }
+}
+.m-button__success {
+  color: #fff;
+  background-color: var(--m-success);
+  border-color: var(--m-success);
+  &:active:not(:disabled) {
+    background: #24a46d;
+  }
+}
+.m-button__warning {
+  color: #fff;
+  background-color: var(--m-warning);
+  border-color: var(--m-warning);
+  &:active:not(:disabled) {
+    background: #fa3a0e;
+  }
+}
+
+.m-button__info {
+  color: #fff;
+  background-color: var(--m-info);
+  border-color: var(--m-info);
+  &:active:not(:disabled) {
+    background: #0da5c0;
+  }
+}
+
+.m-button__danger {
+  color: #fff;
+  background-color: var(--m-danger);
+  border-color: var(--m-danger);
+  &:active:not(:disabled) {
+    background: #ec0c38;
+  }
+}
+
+.is-plain {
+  box-shadow: 0 0 0 transparent;
+  &:hover {
+    box-shadow: 0 0 0 transparent;
+  }
+}
+
+.m-button__default.is-plain {
+  &:hover,
+  &:focus {
+    background: transparent;
+    border-color: var(--m-default);
+    color: var(--m-default);
+  }
+}
+.m-button__primary.is-plain {
+  color: var(--m-primary);
+  background: transparent;
+  border-color: var(--m-primary);
+  &:hover:not(:disabled),
+  &:active:not(:disabled) {
+    color: #fff;
+    background: var(--m-primary);
+    border-color: var(--m-primary);
+  }
+  &:hover:not(:disabled) {
+    box-shadow: 0 7px 14px rgb(50 50 93 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+  }
+  &:active:not(:disabled) {
+    box-shadow: 0 0 0 transparent;
+  }
+}
+.m-button__success.is-plain {
+  color: var(--m-success);
+  background: transparent;
+  border-color: var(--m-success);
+  &:hover:not(:disabled),
+  &:active:not(:disabled) {
+    color: #fff;
+    background: var(--m-success);
+    border-color: var(--m-success);
+  }
+  &:hover:not(:disabled) {
+    box-shadow: 0 7px 14px rgb(50 50 93 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+  }
+  &:active:not(:disabled) {
+    box-shadow: 0 0 0 transparent;
+  }
+}
+.m-button__warning.is-plain {
+  color: var(--m-warning);
+  background: transparent;
+  border-color: var(--m-warning);
+  &:hover:not(:disabled),
+  &:active:not(:disabled) {
+    color: #fff;
+    background: var(--m-warning);
+    border-color: var(--m-warning);
+  }
+  &:hover:not(:disabled) {
+    box-shadow: 0 7px 14px rgb(50 50 93 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+  }
+  &:active:not(:disabled) {
+    box-shadow: 0 0 0 transparent;
+  }
+}
+.m-button__info.is-plain {
+  color: var(--m-info);
+  background: transparent;
+  border-color: var(--m-info);
+  &:hover:not(:disabled),
+  &:active:not(:disabled) {
+    color: #fff;
+    background: var(--m-info);
+    border-color: var(--m-info);
+  }
+  &:hover:not(:disabled) {
+    box-shadow: 0 7px 14px rgb(50 50 93 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+  }
+  &:active:not(:disabled) {
+    box-shadow: 0 0 0 transparent;
+  }
+}
+.m-button__danger.is-plain {
+  color: var(--m-danger);
+  background: transparent;
+  border-color: var(--m-danger);
+  &:hover:not(:disabled),
+  &:active:not(:disabled) {
+    color: #fff;
+    background: var(--m-danger);
+    border-color: var(--m-danger);
+  }
+  &:hover:not(:disabled) {
+    box-shadow: 0 7px 14px rgb(50 50 93 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+  }
+  &:active:not(:disabled) {
+    box-shadow: 0 0 0 transparent;
+  }
+}

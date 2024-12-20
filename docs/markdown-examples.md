@@ -1,1 +1,1 @@
-<t-button>222</t-button>
+<mg-button>222</mg-button>
