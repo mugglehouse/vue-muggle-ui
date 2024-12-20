@@ -27,4 +27,10 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
     ],
   },
+  // 添加以下 vite 配置
+  vite: {
+    ssr: {
+      noExternal: ['@highlightjs/vue-plugin'],
+    },
+  },
 })
