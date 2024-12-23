@@ -30,7 +30,10 @@ export default defineConfig({
   // 添加以下 vite 配置
   vite: {
     ssr: {
-      noExternal: ['@highlightjs/vue-plugin'],
+      noExternal: ['@highlightjs/vue-plugin', 'highlight.js'],
+    },
+    optimizeDeps: {
+      include: ['highlight.js', '@highlightjs/vue-plugin'],
     },
   },
 })

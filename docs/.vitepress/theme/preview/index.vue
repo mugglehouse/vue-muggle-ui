@@ -1,6 +1,7 @@
 <script setup>
 import { onMounted, reactive, toRefs } from 'vue'
-import 'highlight.js'
+
+// import highlight.js'
 
 const props = defineProps({
   compName: {
@@ -44,7 +45,7 @@ function handleClick() {
       <div class="code" :class="{ show_code: showCode }">
         <div class="code__reference">
           <div class="code_content">
-            <highlightjs autodetect :code="sourceCode" />
+            <highlightjs language="vue" :code="sourceCode" />
           </div>
         </div>
       </div>

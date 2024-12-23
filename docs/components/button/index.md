@@ -33,7 +33,6 @@ disable
   <demo5/>
 </preview>
 
-
 size
 
 <preview comp-name="button" demo-name="demo2">

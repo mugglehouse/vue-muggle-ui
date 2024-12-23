@@ -1,37 +1,43 @@
 {
-  "hash": "54dd3e71",
-  "configHash": "bf1190e5",
-  "lockfileHash": "69825e38",
-  "browserHash": "9bff1a97",
+  "hash": "cd597ad8",
+  "configHash": "6c783f0b",
+  "lockfileHash": "044d4ef5",
+  "browserHash": "55b3bd7c",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/.pnpm/vue@3.5.13_typescript@5.6.3/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "a167a723",
+      "fileHash": "e8e866cd",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/.pnpm/@vue+devtools-api@7.6.8/node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "1c6fc96d",
+      "fileHash": "03e2d10d",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/.pnpm/@vueuse+core@11.3.0_vue@3.5.13_typescript@5.6.3_/node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "d7b4dccb",
-      "needsInterop": false
-    },
-    "@highlightjs/vue-plugin": {
-      "src": "../../../../node_modules/.pnpm/@highlightjs+vue-plugin@2.1.0_highlight.js@11.10.0_vue@3.5.13_typescript@5.6.3_/node_modules/@highlightjs/vue-plugin/dist/highlightjs-vue.esm.min.js",
-      "file": "@highlightjs_vue-plugin.js",
-      "fileHash": "b15306b6",
+      "fileHash": "42168d55",
       "needsInterop": false
     },
     "highlight.js": {
-      "src": "../../../../node_modules/.pnpm/highlight.js@11.10.0/node_modules/highlight.js/es/index.js",
+      "src": "../../../../node_modules/.pnpm/highlight.js@11.11.0/node_modules/highlight.js/es/index.js",
       "file": "highlight__js.js",
-      "fileHash": "e0498b97",
+      "fileHash": "52a25a12",
+      "needsInterop": false
+    },
+    "@highlightjs/vue-plugin": {
+      "src": "../../../../node_modules/.pnpm/@highlightjs+vue-plugin@2.1.0_highlight.js@11.11.0_vue@3.5.13_typescript@5.6.3_/node_modules/@highlightjs/vue-plugin/dist/highlightjs-vue.esm.min.js",
+      "file": "@highlightjs_vue-plugin.js",
+      "fileHash": "fb1e9f3f",
+      "needsInterop": false
+    },
+    "highlight.js/lib/common": {
+      "src": "../../../../node_modules/.pnpm/highlight.js@11.11.0/node_modules/highlight.js/es/common.js",
+      "file": "highlight__js_lib_common.js",
+      "fileHash": "74e6b826",
       "needsInterop": false
     }
   },
@@ -39,8 +45,11 @@
     "chunk-5TCDO6LD": {
       "file": "chunk-5TCDO6LD.js"
     },
-    "chunk-WY3YIQ6A": {
-      "file": "chunk-WY3YIQ6A.js"
+    "chunk-KDS6DSGQ": {
+      "file": "chunk-KDS6DSGQ.js"
+    },
+    "chunk-3A65FT47": {
+      "file": "chunk-3A65FT47.js"
     },
     "chunk-5WRI5ZAA": {
       "file": "chunk-5WRI5ZAA.js"
