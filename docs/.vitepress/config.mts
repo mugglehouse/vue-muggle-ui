@@ -14,9 +14,15 @@ export default defineConfig({
     sidebar: {
       '/components/': [
         {
-          text: '组件',
+          text: '基础组件',
           items: [
             { text: 'Button 按钮', link: '/components/button' },
+            { text: 'Layout 布局', link: '/components/col' },
+          ],
+        },
+        {
+          text: '函数组件',
+          items: [
             { text: 'Message 消息提示', link: '/components/message' },
           ],
         },
