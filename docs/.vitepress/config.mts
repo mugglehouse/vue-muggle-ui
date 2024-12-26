@@ -22,6 +22,12 @@ export default defineConfig({
           ],
         },
         {
+          text: '表单组件',
+          items: [
+            { text: 'Checkbox 复选框', link: '/components/checkbox' },
+          ],
+        },
+        {
           text: '函数组件',
           items: [
             { text: 'Message 消息提示', link: '/components/message' },
