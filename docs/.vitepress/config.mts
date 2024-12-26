@@ -25,6 +25,7 @@ export default defineConfig({
           text: '表单组件',
           items: [
             { text: 'Checkbox 复选框', link: '/components/checkbox' },
+            { text: 'Input 输入框', link: '/components/input' },
           ],
         },
         {
