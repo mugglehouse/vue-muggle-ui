@@ -45,6 +45,7 @@ export default defineConfig({
           text: '导航组件',
           items: [
             { text: 'Step 步骤条', link: '/components/steps' },
+            { text: 'Pagination 分页器', link: '/components/pagination' },
           ],
         },
       ],
