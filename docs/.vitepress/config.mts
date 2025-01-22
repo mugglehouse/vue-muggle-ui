@@ -35,6 +35,12 @@ export default defineConfig({
             { text: 'Message 消息提示', link: '/components/message' },
           ],
         },
+        {
+          text: '数据组件',
+          items: [
+            { text: 'Tree 树形控件', link: '/components/tree' },
+          ],
+        },
       ],
 
     },
