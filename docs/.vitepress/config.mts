@@ -41,6 +41,12 @@ export default defineConfig({
             { text: 'Tree 树形控件', link: '/components/tree' },
           ],
         },
+        {
+          text: '导航组件',
+          items: [
+            { text: 'Step 步骤条', link: '/components/steps' },
+          ],
+        },
       ],
 
     },
