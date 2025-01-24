@@ -1,18 +1,23 @@
 <script setup>
-import { computed, getCurrentInstance, inject, onMounted, ref } from 'vue'
+import { computed, getCurrentInstance, inject } from 'vue'
 import { Props } from './step'
 
 defineOptions({
   name: 'MStep',
 })
 defineProps(Props)
-const getStepIndex = inject('getStepIndex') // 获取当前步骤的索引
-const stepIndexList = inject('stepIndexList') // 所有步骤的索引
+const instance = getCurrentInstance() // 获取当前组件实例
+const childrenUid = inject('childrenUid') // 获取存放所有step子组件的uid数组
 const active = inject('active') // 获取当前激活的步骤，来自父组件的props
-const currentIndex = ref()
+// const align = inject('align') // 获取对齐方式，来自父组件的props
 
-onMounted(() => {
-  currentIndex.value = getStepIndex()
+// 当前步骤的索引
+const currentIndex = computed(() => {
+  let index = null
+  if (Array.isArray(childrenUid.value))
+  // 找到当前组件在子组件数组中的索引，就是对应第几步
+    index = childrenUid.value.findIndex(item => item === instance.uid)
+  return index
 })
 </script>
 
@@ -24,7 +29,7 @@ onMounted(() => {
     :class="{
       is_complete: (currentIndex || 0) <= active - 1,
       is_begining: (currentIndex || 0) === active,
-      is_last_step: (currentIndex || 0) === stepIndexList.length - 1,
+      is_last_step: (currentIndex || 0) === childrenUid.length - 1,
     }"
   >
     <div class="m-step__container">
@@ -40,7 +45,7 @@ onMounted(() => {
         </span>
         <!-- 若不是最后一步，则向外延申一条线 -->
         <div
-          v-if="currentIndex !== stepIndexList.length - 1"
+          v-if="currentIndex !== childrenUid.length - 1"
           class="m-step__line"
         />
       </div>
@@ -49,7 +54,7 @@ onMounted(() => {
         class="m-step__content"
         :class="{
           isFirstStep: currentIndex === 0,
-          isLastStep: currentIndex === stepIndexList.length - 1,
+          isLastStep: currentIndex === childrenUid.length - 1,
         }"
       >
         <!-- 标题 -->

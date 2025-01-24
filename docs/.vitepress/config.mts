@@ -39,6 +39,7 @@ export default defineConfig({
           text: '数据组件',
           items: [
             { text: 'Tree 树形控件', link: '/components/tree' },
+            { text: 'Carousel 走马灯', link: '/components/carousel' },
           ],
         },
         {
