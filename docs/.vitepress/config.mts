@@ -41,6 +41,7 @@ export default defineConfig({
             { text: 'Tree 树形控件', link: '/components/tree' },
             { text: 'Carousel 走马灯', link: '/components/carousel' },
             { text: 'Collapse 折叠面板', link: '/components/collapse' },
+            { text: 'Table 表格', link: '/components/table' },
           ],
         },
         {
