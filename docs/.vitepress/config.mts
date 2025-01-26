@@ -27,6 +27,7 @@ export default defineConfig({
             { text: 'Checkbox 复选框', link: '/components/checkbox' },
             { text: 'Input 输入框', link: '/components/input' },
             { text: 'Switch 开关', link: '/components/switch' },
+            { text: 'Select 选择器', link: '/components/select' },
           ],
         },
         {
