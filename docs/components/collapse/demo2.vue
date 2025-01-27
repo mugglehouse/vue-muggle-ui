@@ -5,7 +5,7 @@ const activeNames = ref(['1'])
 </script>
 
 <template>
-  <m-collapse v-model="activeNames">
+  <m-collapse v-model="activeNames" accordion>
     <m-collapse-item title="Champage Problem" name="1">
       <div>
         One for the Money, Two for the Show,I never was ready so I watch you go.
