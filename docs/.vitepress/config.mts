@@ -36,6 +36,7 @@ export default defineConfig({
           items: [
             { text: 'Message 消息提示', link: '/components/message' },
             { text: 'Dialog 对话框', link: '/components/dialog' },
+            { text: 'Tooltip 文字提示', link: '/components/tooltip' },
           ],
         },
         {
