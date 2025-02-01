@@ -1,7 +1,9 @@
 import { createApp } from 'vue'
-import TestUI from '@muggle-ui/components'
+
+// import MuggleUI from '../dist/es/index.js'
+import MuggleUI from 'muggle-ui'
 import App from './app.vue'
 
 const app = createApp(App)
-app.use(TestUI)
+app.use(MuggleUI)
 app.mount('#app')

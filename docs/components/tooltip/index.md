@@ -4,6 +4,8 @@ import demo2 from './demo2.vue'
 import demo3 from './demo3.vue'
 </script>
 
+# Tooltip文字提示
+
 ## 基础用法
 content
 <preview comp-name="tooltip" demo-name="demo1">

@@ -1,5 +1,6 @@
 // 将所有export的组件引入，components会是一个对象，包含了所有组件
 import * as components from './components'
+import '@muggle-ui/theme-chalk/index.less'
 
 const FUNCTION_COMP = ['MMessage']
 

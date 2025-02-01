@@ -10,5 +10,12 @@
   "scripts": {
     "dev": "vite --port 8888",
     "test": "esno test.ts"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "vite": "^5.1.5"
+  },
+  "dependencies": {
+    "muggle-ui": "^1.0.0"
   }
 }
