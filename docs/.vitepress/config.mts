@@ -32,9 +32,10 @@ export default defineConfig({
           ],
         },
         {
-          text: '函数组件',
+          text: '反馈组件',
           items: [
             { text: 'Message 消息提示', link: '/components/message' },
+            { text: 'Dialog 对话框', link: '/components/dialog' },
           ],
         },
         {
