@@ -13,7 +13,8 @@ import hljsVuePlugin from '@highlightjs/vue-plugin'
 
 // import 'highlight.js/styles/base16/summerfruit-light.css'
 // import hljsVuePlugin from '@highlightjs/vue-plugin'
-import Preview from './preview/index.vue'
+// import Preview from './preview/index.vue'
+import PreviewPlugin from './preview/install'
 
 // 引入样式文件
 
@@ -27,7 +28,8 @@ export default {
   enhanceApp({ app, router, siteData }) {
     app.use(MuggleUI)
     app.use(hljsVuePlugin)
-    app.component('preview', Preview)
+    // app.component('preview', Preview)
+    app.use(PreviewPlugin)
     // app.use(hljsVuePlugin)
   },
 } satisfies Theme

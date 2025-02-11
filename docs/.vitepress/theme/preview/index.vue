@@ -21,10 +21,9 @@ onMounted(() => {
 const state = reactive({
   sourceCode: '',
   showCode: false,
-  demoHTML: '',
 })
 
-const { sourceCode, showCode, demoHTML } = toRefs(state)
+const { sourceCode, showCode } = toRefs(state)
 
 async function componentCode() {
   const data = await import(`../../../components/${props.compName}/${props.demoName}.vue?raw`)

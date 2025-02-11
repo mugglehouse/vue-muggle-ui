@@ -191,7 +191,7 @@ const {
 } = toRefs(state)
 
 function openMessage(type, showClose) {
-  PMessage({
+  MMessage({
     type,
     message: '这是一条消息',
     showClose,
@@ -199,7 +199,7 @@ function openMessage(type, showClose) {
 }
 
 function dialogOK() {
-  PMessage({
+  MMessage({
     type: 'success',
     message: '确认后的回调',
   })
