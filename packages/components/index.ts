@@ -17,7 +17,7 @@ function createPopperContainer() {
 async function install(app) {
   // 放到install方法里注册
   createPopperContainer()
-  // Object.entries将对象的键值提取出来，返回一个数组，数组的每个元素都是一个[key,value]数组
+  // Object.entries将对象的键值提取出来，返回一个可迭代对象，可迭代对象的每个元素都是一个[key,value]数组，key是组件名，value是组件
   Object.entries(components).forEach(([key, value]) => { // 数组也是可以解构的
     if (!FUNCTION_COMP.includes(key)) // 把函数组件排除
       app.component(key, value)

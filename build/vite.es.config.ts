@@ -30,6 +30,8 @@ export default defineConfig({
         globals: {
           vue: 'Vue', // 全局变量映射
         },
+        // preserveModules: true, // 按需引入
+        // preserveModulesRoot: 'packages/components',
       },
     },
   },
